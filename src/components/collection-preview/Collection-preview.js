@@ -4,7 +4,7 @@ import "./collection-preview.scss";
 
 const CollectionPreview = ({ title, items }) => {
 	return (
-		<div className="collection-preview">
+		<section className="collection-preview">
 			<h1 className="title">{title.toUpperCase()}</h1>
 			<div className="preview">
 				{items
@@ -13,7 +13,7 @@ const CollectionPreview = ({ title, items }) => {
       <CollectionItem key={item.id} {...item} />
 					))}
 			</div>
-		</div>
+		</section>
 	);
 };
 

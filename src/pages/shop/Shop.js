@@ -8,11 +8,11 @@ const ShopPage = () => {
 	const [collections, setCollections] = React.useState(SHOP_DATA);
 	console.log(collections);
 	return (
-		<div className="shop-page">
+		<main className="shop-page">
 			{collections.map((collection) => (
 				<CollectionPreview key={collection.id} {...collection} />
 			))}
-		</div>
+		</main>
 	);
 };
 

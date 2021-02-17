@@ -3,9 +3,9 @@ import "./homepage.scss";
 import Directory from "../../components/directory/Directory";
 
 const HomePage = () => (
- <div className="homepage">
+ <main className="homepage">
   <Directory />
- </div>
+ </main>
 )
 
 export default HomePage

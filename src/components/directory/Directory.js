@@ -6,11 +6,11 @@ import { data } from "../../data";
 const Directory = () => {
  const [sections, setSections] = useState(data)
 	return (
-		<div className="directory-menu">
+		<section className="directory-menu">
 			{sections.map((section) => (
 				<MenuItem key={section.id} {...section} />
 			))}
-		</div>
+		</section>
 	);
 };
 
